@@ -11,7 +11,6 @@ RUN npm install --cache /tmp/empty-cache && \
     rm -rf /tmp/*
 
 USER node
-
-EXPOSE 1337
+EXPOSE 3000
 
 CMD ["node", "server.js"]
