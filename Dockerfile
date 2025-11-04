@@ -12,8 +12,6 @@ RUN npm install --cache /tmp/empty-cache && \
 
 USER node
 
-# Render сам подставит порт через переменную окружения $PORT
-# EXPOSE можно оставить, но Render его игнорирует
-EXPOSE 10000
+EXPOSE 1337
 
-CMD ["sh", "-c", "node server.js --port $PORT"]
+CMD ["node", "server.js"]
