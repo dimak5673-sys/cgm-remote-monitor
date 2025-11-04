@@ -20,4 +20,4 @@ RUN npm install --cache /tmp/empty-cache && \
 USER node
 EXPOSE 1337
 
-CMD ["node", "lib/server/server.js"]
+CMD ["sh", "-c", "PORT=$PORT node server.js"]
